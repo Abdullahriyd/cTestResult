@@ -16,10 +16,12 @@
 
 <body>
     <div class="container" >
-        <nav class="navbar  navbar-dark my-3 d-print-none">
+        <nav class="navbar  navbar-dark my-3 ">
             <a class="navbar-brand" href="#">
                 <img src="images/logo.png" alt="Corona Test Result">
             </a>
+            <h3 style ="margin:10px; padding:5px; color: #F4DB78;">Corona Test Report</h3>
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
                 aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
                 <img src="images/toggler-icon.svg" alt="">
@@ -32,22 +34,58 @@
                                 class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#" id="btn-about">About</a>
                     </li>
 
                 </ul>
             </div>
         </nav>
-
-        <main class="content-area" class='search-area'>
-            <div id="search-area" class="search-bar col-md-12 mx-auto">
-                
+        <!-- Main section -->
+        <main class="content-area" class='search-area' id="btn-main">
+            <div id="search-area" class="search-bar col-md-12 mx-auto text-center">
                 <iframe width='100%' height='636px' style="background-color: white ;" src="https://covid19reports.dghs.gov.bd/">
                 </iframe>
-            </div>      
+            </div>
         </main>
+        <!-- Main section -->
+        <!-- About section -->
+        <div id="about" class="text-center" style="margin:10px; padding:10px; height:512px">
+            <button id="btn-back" class="btn btn-success" style="margin:10px; padding:5px;">Back</button>
+            <p class="text-justify">
+                This website help Bangladeshi people to find corona test report.
+                You can download pdf file of corona test result or certificate. 
+                The Result or certificate downloads form Bangladesh government 
+                authorized website and we don't change or create it.
+                Also you can download or check from <a target="_blank" href="https://www.dghs.gov.bd/">DGHS</a> website.
+                Just press the print button To download your corona test certificate/result.
+            </p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p class="text-left small">
+                Credit Section <br>
+                <a target="_blank" href="https://icons8.com/icons/set/coronavirus">Coronavirus icon</a> & 
+                <a target="_blank" href="https://icons8.com/icons/set/protection-mask">Protection Mask icon</a> by <a target="_blank" href="https://icons8.com">Icons8</a>
+            </p>
+        </div>      
+        <!-- About section -->
 
+        <!-- Footer -->
+        <footer class="page-footer font-small blue">
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">© 2020 Copyright: AAR-Web
+            </div>
+            <!-- Copyright -->
         
+        </footer>
+        <!-- Footer -->
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
